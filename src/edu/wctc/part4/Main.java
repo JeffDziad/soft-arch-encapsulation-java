@@ -1,5 +1,8 @@
 package edu.wctc.part4;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * This class is the startup class for the program. But together with the other
  * classes provided it is not a particularly good simulation of the real world.
@@ -10,11 +13,13 @@ package edu.wctc.part4;
  */
 public class Main {
 
-    public static void main(String[] args) {
-        Employee employee = new Employee("Peter", "Piper", "333-33-3333");
+    private static List<Company> companies = new ArrayList<>();
 
-        employee.doFirstTimeOrientation("A101");
-        employee.printReport();
+    public static void main(String[] args) {
+        Company company = new Company("Jeff Inc.");
+        company.hireEmployee("Jeff", "Dziadulewicz", "999-999-9999");
+
+        companies.add(company);
     }
 
 }

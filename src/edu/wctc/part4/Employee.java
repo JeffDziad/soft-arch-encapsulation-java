@@ -56,8 +56,6 @@ public class Employee {
         constructor. But we use the setter method to perform validation.
      */
     public Employee(String firstName, String lastName, String ssn) {
-        // Using setter method guarantees validation will be performed
-        // Ignore the warning messages for now. Will be explained later
         setFirstName(firstName);
         setLastName(lastName);
         setSsn(ssn);
